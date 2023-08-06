@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ask for Input</title>
+</head>
+<body>
+  <button onclick="openInputPage()">Open Input Page</button>
+
+  <script>
+    function openInputPage()
+    {
+      alert("Hey, Welcome to xyz NGO");
+      var input = prompt("Are you looking to adopt a dog(Type yes or no) ?");
+      if (input == "yes") 
+      {
+        var i1 = prompt("Do you prefer small or large dog(Type small or large) ?");
+        if(i1 == "small")
+        {
+            var i2 = prompt("Are you willing to adopt a high mainteance dog(Type yes or no) ?");
+            if(i2 == "yes")
+            {
+                alert("You should go with pug or chihuahua");
+            }
+            else
+            {
+                alert("You should go with Indian");
+            }
+        }
+        else
+        {
+            var i3 = prompt("Do you want a guard dog(Type yes or no) ?");
+            if(i3 == "yes")
+            {
+                var i4 = prompt("Do you stay in cold area(Type yes or no) ?");
+                if(i4 == "yes")
+                {
+                    alert("You should go with Husky");
+                }
+                else
+                {
+                    alert("You can go either with Doberman or German Shepherd");
+                }
+            }
+            else
+            {
+                alert("Saint Bernald");
+            }
+        }
+      }
+      else
+      {
+        alert("Thank you for visiting our website.");
+      }
+      alert("Have a nice day sir/mam.");
+    }
+  </script>
+</body>
+</html>
