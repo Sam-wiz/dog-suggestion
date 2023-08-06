@@ -68,7 +68,7 @@
     }
     const header = document.getElementById('header');
 const text = header.textContent;
-header.textContent = ''; // Clear the h1 content to add letters one by one
+header.textContent = ''; 
 
 let i = 0;
 const intervalId = setInterval(() => {
@@ -76,9 +76,9 @@ const intervalId = setInterval(() => {
   i++;
 
   if (i >= text.length) {
-    clearInterval(intervalId); // Stop the interval when all letters are revealed
+    clearInterval(intervalId);
   }
-}, 100); // You can adjust the time interval (in milliseconds) for the desired smoothness
+}, 100); 
 
   </script>
 </body>
